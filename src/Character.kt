@@ -16,6 +16,7 @@ class Character {
     var stealth = 10    //stealth
     var acc = 10        //accuracy
     var intel = 10      //intelligence
+    var lck = 10        //luck
 
     //displays character stats
     //might need to shorten/rearrange stuff
@@ -24,7 +25,7 @@ class Character {
                 "Str: $str      Mag: $mag \n" +
                 "Def: $def      Res: $res \n" +
                 "Spd: $spd      Stamina: $stamina\n" +
-                "Stealth: $stealth  Acc: $acc\n" +
-                "Intel: $intel")
+                "Acc: $acc      Stealth: $stealth\n" +
+                "Lck: $lck      Intel: $intel")
     }
 }
