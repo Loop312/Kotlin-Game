@@ -1,3 +1,5 @@
+package Characters
+
 class Character {
     //health values
     var maxHp = 10      //max health
