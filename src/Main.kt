@@ -1,6 +1,10 @@
-import Characters.*
+import characters.*
 
 fun main() {
-    val player = Character()
+    val player = Human()
+    player.displayStats()
+    player.lvlup()
+    player.displayStats()
+    player.strDmg(15)
     player.displayStats()
 }

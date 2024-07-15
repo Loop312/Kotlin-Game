@@ -1,9 +1,9 @@
-package Characters
+package characters
 
 /*
 Strengths: TBD
 Weaknesses: TBD
 Unique Skill: TBD
 */
-class Demon {
+class Demon : Character() {
 }

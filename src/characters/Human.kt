@@ -1,9 +1,9 @@
-package Characters
+package characters
 
 /*
 Strengths: None
 Weaknesses: None
 Unique Skill: Exp Multiplier
 */
-class Human {
+class Human : Character() {
 }

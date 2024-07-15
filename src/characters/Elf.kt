@@ -1,9 +1,9 @@
-package Characters
+package characters
 
 /*
 Strengths: magic, resistance, accuracy
 Weaknesses: hp, defense, strength
 Unique Skill: TBD
 */
-class Elf {
+class Elf : Character() {
 }
