@@ -19,15 +19,19 @@ open class Character {
     open var acc = 10        //accuracy
     open var intel = 10      //intelligence
     open var lck = 10        //luck
-    open var exp = 0         //experience
-    open var explimit = 10   //experience need to lvlup
-    open var alive = true
-    open var skillPoints = 0
+    //exp system 
+    open var exp = 0.0       //experience
+    open var explimit = 10.0 //experience need to lvlup
+    open var level = 1       //Player level
+    open var skillPoints = 0 //used to upgrade character
+    //status tracker
+    var alive = true
 
     //displays character stats
     //might need to shorten/rearrange stuff
     fun displayStats(){
-        println("Name: $name    Skill Points: $skillPoints\n" +
+        println("Name: $name\n" +
+                "Level: $level     Skill Points: $skillPoints"
                 "Hp: $hp/$maxHp    Exp: $exp/$explimit \n" +
                 "Str: $str      Mag: $mag \n" +
                 "Def: $def      Res: $res \n" +
