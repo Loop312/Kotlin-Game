@@ -31,7 +31,7 @@ open class Character {
     //might need to shorten/rearrange stuff
     fun displayStats(){
         println("Name: $name\n" +
-                "Level: $level     Skill Points: $skillPoints"
+                "Level: $level     Skill Points: $skillPoints\n" +
                 "Hp: $hp/$maxHp    Exp: $exp/$explimit \n" +
                 "Str: $str      Mag: $mag \n" +
                 "Def: $def      Res: $res \n" +
@@ -41,12 +41,13 @@ open class Character {
     }
 
     //gain exp
-    open fun gainExp(num: Int){
+    open fun gainExp(num: Double){
         exp += num
     }
     //levels up character
     //need to figure out how I want to implement lvl ups
-    fun lvlup(){
+    open fun lvlup(){
+        level += 1
         exp = exp - explimit
         explimit *= 2
         skillPoints += 5
@@ -71,4 +72,12 @@ open class Character {
         }
     }
 
+    //delete later
+    fun lvlupSim(num: Int) {
+        for (i in 1..num) {
+            displayStats()
+            gainExp(explimit)
+            lvlup()
+        }
+    }
 }
